@@ -7,6 +7,7 @@
 ## Instructions
 
 * Make sure to have mongodb running on localhost and its default port: `27017`
+* Make sure to have NodeJS 8.9.4 running. This app might be using some features not compatible with previous versions
 * Clone this repo: `$git clone https://github.com/Andrew4d3/test-reign.git`
 * Change directory: `$cd test-reign/`
 * Install dependecies by doing: `$npm install` or `$yarn install`
