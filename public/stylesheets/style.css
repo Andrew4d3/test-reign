@@ -3,6 +3,34 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.article-title, .article-date {
+  color: #333;
+  font-size: 17px;
+}
+
+.article-author {
+  color: #999;
+  margin-left: 15px;
+}
+
+.article-date {
+  margin-left: auto;
+}
+
+.delete-button {
+  font-size: 17px !important;
+  margin-left: 10px;
+}
+
+.news-entry.list-group-item-action {
+  background-color: #fff;
+  border: solid 1px #ccc;
+}
+
+.news-entry.list-group-item-action:hover {
+  background-color: #fafafa;
+}
+
+.news-entry {
+  display: flex !important;
 }

@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .jumbotron.jumbotron-fluid
+    .container
+      h1.display-4 HN News
+      p.lead
+        | We <3 Hacker news!
+  
+  .news-list.list-group
+    each article in articles
+      a.news-entry.list-group-item.list-group-item-action(href=(article.story_url || article.url) target="_blank")
+        span.article-title #{article.story_title || article.title}#{' '}
+        span.article-author #{' - '}#{article.author}#{' - '}
+        span.article-date #{article.prettyDate}#{' '}
+        span.delete-button.badge.badge-light(data-article-id=article._id)
+          i.fa.fa-trash
